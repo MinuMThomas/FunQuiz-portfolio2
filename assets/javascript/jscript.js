@@ -104,7 +104,7 @@ function quizBegin() {
 }
 
 function nextQuizQuest() {
-   
+    defReset()
     viewQuizQuest(questions[quizQuestLive])
 }
 //question
@@ -120,9 +120,31 @@ function viewQuizQuest(question) {
       if (answer==question.correct) {
         listItems.dataset.correct = answer.correct
       }
-      listItems.addEventListener('click', selectAnswer)
+      listItems.addEventListener('click',quizAns)
       listOfAnswer.appendChild(listItems)
     })
   }
-
-
+// function for reset after question
+function  defReset() {
+    
+    nextBtn.classList.add('absent')
+    while (listOfAnswer.firstChild) {
+        listOfAnswer.removeChild(listOfAnswer.firstChild)
+  }
+}
+function quizAns(ansC) {
+    const ansBtn = ansC.target
+    const correct = ansBtn.dataset.correct
+    //
+    checkAnsStatus(document.body, correct)
+    //array to use for each loop
+    Array.from(listOfAnswer.children).forEach(listItems=> {
+        checkAnsStatus(listItems, listItems.dataset.correct)
+    })
+      if (questions.length > quizQuestLive+ 1) {
+      nextBtn.classList.remove('absent')
+    } else {
+        quizBtn.innerText = 'Restart'
+        quizBtn.classList.remove('absent')
+    }
+  }
