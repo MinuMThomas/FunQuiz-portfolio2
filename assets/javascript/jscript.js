@@ -1,9 +1,8 @@
 //quiz questions
-const questions = [
-    {
-        question:  "What is always coming but never arrives?",
-        correct : "Tomorrow",
-        answers:[
+const questions = [{
+        question: "What is always coming but never arrives?",
+        correct: "Tomorrow",
+        answers: [
             "car",
             "river",
             "Tomorrow",
@@ -11,9 +10,9 @@ const questions = [
         ]
     },
     {
-        question:  "What word is spelled incorrectly in every single dictionary??",
-        correct : "Incorrectly",
-        answers:[
+        question: "What word is spelled incorrectly in every single dictionary??",
+        correct: "Incorrectly",
+        answers: [
             "parliament",
             "Incorrectly",
             "promise",
@@ -21,9 +20,9 @@ const questions = [
         ]
     },
     {
-        question:  "What never asks a question but gets answered all the time??",
-        correct : "phone",
-        answers:[
+        question: "What never asks a question but gets answered all the time??",
+        correct: "phone",
+        answers: [
             "phone",
             "radio",
             "television",
@@ -31,9 +30,9 @@ const questions = [
         ]
     },
     {
-        question:  "What is always coming but never arrives?",
-        correct : "Tomorrow",
-        answers:[
+        question: "What is always coming but never arrives?",
+        correct: "Tomorrow",
+        answers: [
             "car",
             "river",
             "Tomorrow",
@@ -41,9 +40,9 @@ const questions = [
         ]
     },
     {
-        question:  "What can one catch that is not thrown??",
-        correct : "cold",
-        answers:[
+        question: "What can one catch that is not thrown??",
+        correct: "cold",
+        answers: [
             "fish",
             "leaf",
             "cold",
@@ -51,9 +50,9 @@ const questions = [
         ]
     },
     {
-        question:  " What can provide us with power and strength to walk through a wall??",
-        correct : "A door",
-        answers:[
+        question: " What can provide us with power and strength to walk through a wall??",
+        correct: "A door",
+        answers: [
             "A door",
             "A wall",
             "muscles",
@@ -61,9 +60,9 @@ const questions = [
         ]
     },
     {
-        question:  "When you drop a white hat in the Black sea, what will it become??",
-        correct : "It becomes wet",
-        answers:[
+        question: "When you drop a white hat in the Black sea, what will it become??",
+        correct: "It becomes wet",
+        answers: [
             "It becomes light",
             "It becomes wet",
             "It becomes white",
@@ -71,9 +70,9 @@ const questions = [
         ]
     },
     {
-        question:  "Despite its name, what is actually Bombay Duck?",
-        correct : "type of fish",
-        answers:[
+        question: "Despite its name, what is actually Bombay Duck?",
+        correct: "type of fish",
+        answers: [
             "type of turtle",
             "type of chicken",
             "type of duck",
@@ -87,20 +86,19 @@ const nextBtn = document.getElementById('btn-submit')
 const quizQuestList = document.getElementById('quiz')
 
 
-let  quizQuestLive
+let quizQuestLive
 
 quizBtn.addEventListener('click', quizBegin)
 nextBtn.addEventListener('click', () => {
-    quizQuestLive++ 
-  nextQuizQuest()
+    quizQuestLive++
+    nextQuizQuest()
 })
 
 function quizBegin() {
     quizBtn.classList.add('absent')
-  //shuffledQuestions = questions.sort(() => Math.random() - .5)
-  quizQuestLive= 0
-  quizQuestList.classList.remove('absent')
-  nextQuizQuest()
+    quizQuestLive = 0
+    quizQuestList.classList.remove('absent')
+    nextQuizQuest()
 }
 
 function nextQuizQuest() {
@@ -114,37 +112,52 @@ const listOfAnswer = document.getElementById('btn-ans')
 function viewQuizQuest(question) {
     questsQuiz.innerText = question.question
     question.answers.forEach(answer => {
-      const listItems = document.createElement('listItems')
-      listItems.innerText = answer
-      listItems.classList.add('ans')
-      if (answer==question.correct) {
-        listItems.dataset.correct = answer.correct
-      }
-      listItems.addEventListener('click',quizAns)
-      listOfAnswer.appendChild(listItems)
+        const listItems = document.createElement('listItems')
+        listItems.innerText = answer
+        listItems.classList.add('ans')
+        if (answer == question.correct) {
+            listItems.dataset.correct = answer.correct
+        }
+        listItems.addEventListener('click', quizAns)
+        listOfAnswer.appendChild(listItems)
     })
-  }
-// function for reset after question
-function  defReset() {
-    
+}
+//function to reset to default state after each question
+function defReset() {
+    removeStat(document.body)
     nextBtn.classList.add('absent')
     while (listOfAnswer.firstChild) {
         listOfAnswer.removeChild(listOfAnswer.firstChild)
-  }
+    }
 }
+
 function quizAns(ansC) {
     const ansBtn = ansC.target
     const correct = ansBtn.dataset.correct
-    //
+
     checkAnsStatus(document.body, correct)
     //array to use for each loop
-    Array.from(listOfAnswer.children).forEach(listItems=> {
+    Array.from(listOfAnswer.children).forEach(listItems => {
         checkAnsStatus(listItems, listItems.dataset.correct)
     })
-      if (questions.length > quizQuestLive+ 1) {
-      nextBtn.classList.remove('absent')
+    if (questions.length > quizQuestLive + 1) {
+        nextBtn.classList.remove('absent')
     } else {
         quizBtn.innerText = 'Restart'
         quizBtn.classList.remove('absent')
     }
-  }
+}
+
+function checkAnsStatus(element, correct) {
+    removeStat(element)
+    if (correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
+}
+
+function removeStat(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+}

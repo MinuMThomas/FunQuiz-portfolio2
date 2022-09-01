@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
-  
+ 
   body {
     font-family:'Crimson Text', serif;
     font-size: 40px;
@@ -60,4 +60,12 @@
   
   .absent {
     display: none;
+  }
+  .ans.correct {
+    background-color: green;
+  
+  }
+  
+  .ans.wrong {
+    background-color: red;
   }
