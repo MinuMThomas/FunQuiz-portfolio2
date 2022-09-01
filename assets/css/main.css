@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+  
+  body {
+    font-family:'Crimson Text', serif;
+    font-size: 40px;
+    color: rgb(47, 28, 31);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 191, 203);
+  }
+  
+
+  .container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+  }
+  
+  .options{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .ans {
+   color: beige;
+    border: 1px solid black;
+    background-color: rgba(83, 208, 191, 0.893);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+  }
+  
+  .ans:hover {
+    background-color: blueviolet;
+    border-color: rgba(110, 149, 187, 0.703);
+  }
+  
+  .btn-start, .btn-submit {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .absent {
+    display: none;
+  }
