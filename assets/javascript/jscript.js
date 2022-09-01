@@ -82,13 +82,47 @@ const questions = [
     },
 ]
 
-//begin the quiz
-const quizBtn = document.getElementById('btn-start');
-//add event listener
-quizBtn.addEventListener('click', quizBegin);
-const quizQuestList =document.getElementById('quiz');//show questions
+const quizBtn = document.getElementById('btn-start')
+const nextBtn = document.getElementById('btn-submit')
+const quizQuestList = document.getElementById('quiz')
 
-function quizBegin(){
-    console.log("begin the quiz")
-    quizQuestList.classList.add('absent')
+
+let  quizQuestLive
+
+quizBtn.addEventListener('click', quizBegin)
+nextBtn.addEventListener('click', () => {
+    quizQuestLive++ 
+  nextQuizQuest()
+})
+
+function quizBegin() {
+    quizBtn.classList.add('absent')
+  //shuffledQuestions = questions.sort(() => Math.random() - .5)
+  quizQuestLive= 0
+  quizQuestList.classList.remove('absent')
+  nextQuizQuest()
 }
+
+function nextQuizQuest() {
+   
+    viewQuizQuest(questions[quizQuestLive])
+}
+//question
+const questsQuiz = document.getElementById('question')
+const listOfAnswer = document.getElementById('btn-ans')
+
+function viewQuizQuest(question) {
+    questsQuiz.innerText = question.question
+    question.answers.forEach(answer => {
+      const listItems = document.createElement('listItems')
+      listItems.innerText = answer
+      listItems.classList.add('ans')
+      if (answer==question.correct) {
+        listItems.dataset.correct = answer.correct
+      }
+      listItems.addEventListener('click', selectAnswer)
+      listOfAnswer.appendChild(listItems)
+    })
+  }
+
+
