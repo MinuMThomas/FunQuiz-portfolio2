@@ -81,17 +81,16 @@ const questions = [{
     },
 ];
 
-const quizBtn = document.getElementById('btn-start');
-const nextBtn = document.getElementById('btn-submit');
+const quizBtn = document.getElementById('btn-starts');
+const nextBtn = document.getElementById('btn-submits');
 const quizQuestList = document.getElementById('quiz');
 
 
 let quizQuestLive, score;
 
 quizBtn.addEventListener('click', quizBegin);
-nextBtn.addEventListener('click', () => {
-    quizQuestLive++;
-    nextQuizQuest();
+nextBtn.addEventListener('click', function() {
+    quizQuestLive++; nextQuizQuest();
 });
 
 function quizBegin() {
@@ -99,6 +98,7 @@ function quizBegin() {
     quizQuestLive = 0 ;
     quizQuestList.classList.remove('absent');
     nextQuizQuest();
+    alert("BEGIN THE QUIZ!!!!")
 }
 // next question 
 function nextQuizQuest() {

@@ -71,10 +71,10 @@ flex-direction: row;
 justify-content: space-between;
 
   }
-  /* .absent {
+  .absent {
     display: none;
   
-  } */
+  }
   .ans.correct {
     background-color: rgb(50, 129, 50);
   
