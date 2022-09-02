@@ -79,85 +79,85 @@ const questions = [{
             "type of fish"
         ]
     },
-]
+];
 
-const quizBtn = document.getElementById('btn-start')
-const nextBtn = document.getElementById('btn-submit')
-const quizQuestList = document.getElementById('quiz')
+const quizBtn = document.getElementById('btn-start');
+const nextBtn = document.getElementById('btn-submit');
+const quizQuestList = document.getElementById('quiz');
 
 
-let quizQuestLive
+let quizQuestLive;
 
-quizBtn.addEventListener('click', quizBegin)
+quizBtn.addEventListener('click', quizBegin);
 nextBtn.addEventListener('click', () => {
-    quizQuestLive++
-    nextQuizQuest()
-})
+    quizQuestLive++;
+    nextQuizQuest();
+});
 
 function quizBegin() {
-    quizBtn.classList.add('absent')
-    quizQuestLive = 0
-    quizQuestList.classList.remove('absent')
-    nextQuizQuest()
+    quizBtn.classList.add('absent'); //hide start button after first question
+    quizQuestLive = 0 ;
+    quizQuestList.classList.remove('absent');
+    nextQuizQuest();
 }
-
+// next question 
 function nextQuizQuest() {
-    defReset()
-    viewQuizQuest(questions[quizQuestLive])
+    defReset();
+    viewQuizQuest(questions[quizQuestLive]);
 }
 //question
-const questsQuiz = document.getElementById('question')
-const listOfAnswer = document.getElementById('btn-ans')
+const questsQuiz = document.getElementById('question');
+const listOfAnswer = document.getElementById('btn-ans');
 
 function viewQuizQuest(question) {
-    questsQuiz.innerText = question.question
+    questsQuiz.innerText = question.question;
     question.answers.forEach(answer => {
-        const listItems = document.createElement('listItems')
-        listItems.innerText = answer
-        listItems.classList.add('ans')
+        const listItems = document.createElement('listItems');
+        listItems.innerText = answer;
+        listItems.classList.add('ans');
         if (answer == question.correct) {
-            listItems.dataset.correct = answer.correct
+            listItems.dataset.correct = answer.correct;
         }
-        listItems.addEventListener('click', quizAns)
-        listOfAnswer.appendChild(listItems)
-    })
+        listItems.addEventListener('click', quizAns);
+        listOfAnswer.appendChild(listItems);
+    });
 }
 //function to reset to default state after each question
 function defReset() {
-    removeStat(document.body)
-    nextBtn.classList.add('absent')
+    removeStat(document.body);
+    nextBtn.classList.add('absent');
     while (listOfAnswer.firstChild) {
-        listOfAnswer.removeChild(listOfAnswer.firstChild)
+        listOfAnswer.removeChild(listOfAnswer.firstChild);
     }
 }
 
 function quizAns(ansC) {
-    const ansBtn = ansC.target
-    const correct = ansBtn.dataset.correct
+    const ansBtn = ansC.target;
+    const correct = ansBtn.dataset.correct;
 
-    checkAnsStatus(document.body, correct)
-    //array to use for each loop
+    checkAnsStatus(document.body, correct);
+    //array to use for each loop - include all questions and restart after last question
     Array.from(listOfAnswer.children).forEach(listItems => {
-        checkAnsStatus(listItems, listItems.dataset.correct)
-    })
+        checkAnsStatus(listItems, listItems.dataset.correct);
+    });
     if (questions.length > quizQuestLive + 1) {
-        nextBtn.classList.remove('absent')
+        nextBtn.classList.remove('absent');
     } else {
-        quizBtn.innerText = 'Restart'
-        quizBtn.classList.remove('absent')
+        quizBtn.innerText = 'Restart';
+        quizBtn.classList.remove('absent');
     }
 }
-
+// added background color in css for right and wrong answers
 function checkAnsStatus(element, correct) {
-    removeStat(element)
+    removeStat(element);
     if (correct) {
-        element.classList.add('correct')
+        element.classList.add('correct');
     } else {
-        element.classList.add('wrong')
+        element.classList.add('wrong');
     }
 }
 
 function removeStat(element) {
-    element.classList.remove('correct')
-    element.classList.remove('wrong')
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
 }

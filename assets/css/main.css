@@ -67,10 +67,10 @@
     display: none;
   }
   .ans.correct {
-    background-color: green;
+    background-color: rgb(26, 69, 26);
   
   }
   
   .ans.wrong {
-    background-color: red;
+    background-color: rgb(96, 20, 20);
   }
