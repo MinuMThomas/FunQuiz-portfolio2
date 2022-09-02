@@ -86,7 +86,7 @@ const nextBtn = document.getElementById('btn-submit');
 const quizQuestList = document.getElementById('quiz');
 
 
-let quizQuestLive;
+let quizQuestLive, score;
 
 quizBtn.addEventListener('click', quizBegin);
 nextBtn.addEventListener('click', () => {

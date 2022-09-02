@@ -52,7 +52,7 @@ text-shadow: 2px 2px;
     border-color: rgba(110, 149, 187, 0.703);
   }
   
-  .btn-start, .btn-submit {
+  #btn-starts, #btn-submits{
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
@@ -62,14 +62,19 @@ text-shadow: 2px 2px;
   
   .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
-  
-  .absent {
-    display: none;
-    background-color: blueviolet;
+  .scores {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
   }
+  /* .absent {
+    display: none;
+  
+  } */
   .ans.correct {
     background-color: rgb(50, 129, 50);
   
