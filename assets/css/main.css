@@ -15,10 +15,11 @@
     background-image: url(/assets/images/quiz1.webp);
     background-size: cover;
   }
-  h1{
+ h2{
+    color: rgb(0, 85, 128);
     font-family:'Crimson Text', serif;
-    font-size: large;
-    color: rgb(144, 78, 78);
+    text-transform: capitalize;
+text-shadow: 2px 2px;
   }
 
   .container {
@@ -32,14 +33,14 @@
   
   .options{
     display: grid;
-    gap: 10px;
+    gap: 20px;
     margin: 15px 25px 15px 25px;
   }
   
   .ans {
    color: beige;
     border: 1px solid black;
-    background-color: rgba(83, 208, 191, 0.893);
+    background-color: rgba(79, 193, 177, 0.893);
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
@@ -55,6 +56,8 @@
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
+    border: 5px;
+    background-color: blueviolet;
   }
   
   .buttons {
@@ -65,12 +68,13 @@
   
   .absent {
     display: none;
+    background-color: blueviolet;
   }
   .ans.correct {
-    background-color: rgb(26, 69, 26);
+    background-color: rgb(50, 129, 50);
   
   }
   
   .ans.wrong {
-    background-color: rgb(96, 20, 20);
+    background-color: rgb(194, 54, 54);
   }
