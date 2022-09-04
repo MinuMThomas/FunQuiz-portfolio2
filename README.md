@@ -54,7 +54,7 @@ buttons to start and move on next question.
 The skeleton wireframe was made to give a clean and easy to use experiance.
 Made with Balsamiq
 
-![Skeleton of the website!](/assets/images/quiz%20sitemap.png)
+![Skeleton of the website!](/assets/images/funQuizWireframe.png)
 
 
 **Structure**
