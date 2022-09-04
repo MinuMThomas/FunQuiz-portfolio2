@@ -190,11 +190,11 @@ function checkAnsStatus(element, correct) {
     if (correct) {
         element.classList.add('correct');
         score++;
-        alert('well done');
+        // alert('well done');
         
     } else {
         element.classList.add('wrong');
-        alert('sorry');
+        // alert('sorry');
     }
 }
 //color answer background
@@ -205,7 +205,7 @@ function markAnswers(element, correct) {
         element.classList.add('wrong');
     }
 }
-
+//rremove status and return to default
 function removeStat(element) {
 
     element.classList.remove('correct');
