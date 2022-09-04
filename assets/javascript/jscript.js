@@ -77,7 +77,8 @@ const questions = [{
         "type of duck",
         "type of fish"
     ]
-}, {
+}, 
+{
     question: "Which ywar is this?",
     correct: "2022",
     answers: [
@@ -86,7 +87,18 @@ const questions = [{
         "2078",
         "2022"
     ]
-}];
+},
+{
+    question: "Who is the best?",
+    correct: "Me",
+    answers: [
+        "Ronaldo",
+        "You",
+        "Messy",
+        "Me"
+    ]
+},
+];
 
 const quizBtn = document.getElementById('btn-starts');
 const nextBtn = document.getElementById('btn-submits');
@@ -164,8 +176,9 @@ function quizAns(ansC) {
         nextBtn.classList.remove('absent');
 
     } else {
-        quizBtn.innerText = 'Restart';
+        quizBtn.innerText = 'TryAgain!';
         quizBtn.classList.remove('absent');
+        quizBtn.addEventListener('click', resetScore());
     }
 
 }
@@ -198,13 +211,21 @@ function removeStat(element) {
 
     element.classList.remove('wrong');
 }
-// score add
+// add score 
 const scoreDiv = document.getElementById('valid');
 const total = document.getElementById('totalQuestions');
 function updateScore(score, noOfQuestions) {
     scoreContent.classList.remove('absent');
     
     scoreDiv.innerHTML = score;
+    total.innerHTML = noOfQuestions;
+
+}
+//reset score back to zero at the end
+function resetScore() {
+    score = 0;
+    scoreContent.classList.remove('absent'); 
+    scoreDiv.innerHTML = 0;
     total.innerHTML = noOfQuestions;
 
 }
