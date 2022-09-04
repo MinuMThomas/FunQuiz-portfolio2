@@ -107,7 +107,7 @@ const scoreContent = document.getElementById('score');
 
 
 
-let quizQuestLive
+let quizQuestLive;
 let score = 0;
 let noOfQuestions = questions.length;
 
