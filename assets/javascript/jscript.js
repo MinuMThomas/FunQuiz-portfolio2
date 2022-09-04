@@ -178,7 +178,8 @@ function quizAns(ansC) {
     } else {
         quizBtn.innerText = 'TryAgain!';
         quizBtn.classList.remove('absent');
-        quizBtn.addEventListener('click', resetScore());
+        resetScore();
+        // quizBtn.addEventListener('click', resetScore());
     }
 
 }
