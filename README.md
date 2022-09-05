@@ -62,9 +62,9 @@ The information and features was made into a easy to follow and read structure, 
 Structure made with Balsamiq
 
 Wireframe 
-![Wireframe of the Home page!](  "wireframe of home page")
+![Wireframe of the Home page!](./assets/images/first-page.png "wireframe of home page")
 
-![Second page]( "wireframe of quiz question and answer page")
+![Second page](./assets/images/page2wireframe.png "wireframe of riddle question and answer page")
 
 
 
