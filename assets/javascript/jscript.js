@@ -2,15 +2,15 @@ const questions = [{
     question: "What is always coming but never arrives?",
     correct: "Tomorrow",
     answers: [
-        "car",
-        "river",
+        "Car",
+        "River",
         "Tomorrow",
-        "bus"
+        "Bus"
     ]
 },
 {
     question: "What word is spelled incorrectly in every single dictionary??",
-    correct: "Incorrectly",
+    correct: "incorrectly",
     answers: [
         "parliament",
         "incorrectly",
@@ -29,13 +29,13 @@ const questions = [{
     ]
 },
 {
-    question: "What is always coming but never arrives?",
-    correct: "Tomorrow",
+    question: "What month of the year has 28 days??",
+    correct: "All of them",
     answers: [
-        "Car",
-        "River",
-        "Tomorrow",
-        "Bus"
+        "None of them",
+        "February",
+        "All of them",
+        "April"
     ]
 },
 {
@@ -155,8 +155,10 @@ function viewQuizQuest(question) {
 function defReset() {
     removeStat(document.body);
     nextBtn.classList.add('absent');
+  
     while (listOfAnswer.firstChild) {
         listOfAnswer.removeChild(listOfAnswer.firstChild);
+    
     }
 }
 
@@ -172,6 +174,7 @@ function quizAns(ansC) {
     //array to use for each loop - include all questions and restart after last question
     Array.from(listOfAnswer.children).forEach(listItems => {
         markAnswers(listItems, listItems.dataset.correct);
+
     });
     updateScore(score, noOfQuestions);
     if (questions.length > quizQuestLive + 1) {
@@ -180,8 +183,9 @@ function quizAns(ansC) {
     } else {
         quizBtn.innerText = 'TryAgain!';
         quizBtn.classList.remove('absent');
+       
         resetScore();
-        // quizBtn.addEventListener('click', resetScore());
+        // quizBtn.addEventListener('click', resetScore();
     }
 
 }
@@ -202,7 +206,8 @@ function checkAnsStatus(element, correct) {
 //color answer background
 function markAnswers(element, correct) {
     if (correct) {
-        element.classList.add('correct');        
+        element.classList.add('correct'); 
+           
     } else {
         element.classList.add('wrong');
     }
@@ -216,9 +221,10 @@ function removeStat(element) {
 // add score 
 const scoreDiv = document.getElementById('valid');
 const total = document.getElementById('totalQuestions');
+
 function updateScore(score, noOfQuestions) {
-    scoreContent.classList.remove('absent');
     
+    scoreContent.classList.remove('absent'); 
     scoreDiv.innerHTML = score;
     total.innerHTML = noOfQuestions;
 

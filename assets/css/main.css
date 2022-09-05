@@ -16,7 +16,7 @@
     background-size: cover;
   }
  h2{
-    color: rgb(0, 85, 128);
+    color: rgba(32, 115, 160, 0.99);
     font-family:'Crimson Text', serif;
     text-transform: capitalize;
 text-shadow: 2px 2px;
@@ -71,13 +71,10 @@ text-align: center;
   }
   .scores {
 display: flex;
-flex-direction: row;
+flex-direction: row-reverse;
 justify-content: space-between;
+color: rgba(24, 85, 241, 0.939);
   }
-div #score{
-text-transform: capitalize;
-text-align: end;
-}
   
   .absent {
     display: none;
