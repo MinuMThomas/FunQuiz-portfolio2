@@ -94,7 +94,7 @@ Wireframe
 ![]( "image of home page")
 
 - **after click on start button**
-![Quiz Questions and answers](/assets/image/nav%20bar.png "image of question and answers")
+![Quiz Questions and answers](./assets/images/funQuizWireframe.png "image of question and answers")
 
 ## Technologies Used
 
@@ -111,6 +111,9 @@ Main Language Used
 
 -  W3C CSS validation link : 
 <a >link</a>
+
+- JS Hint.com used for Java Script code validation
+![java script validation](./assets/images/jsValidation.png)
 
 - Light house
 ![light house validation](  "image of light house validator")
