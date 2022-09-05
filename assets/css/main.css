@@ -94,6 +94,6 @@ color: rgba(24, 85, 241, 0.939);
    /*  media query for  screen 600px and down */ 
 @media screen and (max-width: 600px) {
   h2{
-    margin: 4em 0 0 0;;
+    margin: 1em 0 0 0;;
   }
 }

@@ -65,7 +65,7 @@ const questions = [{
             "red",
             "white",
             "blew",
-            "blue",
+            "blue"
         ]
     },
     {
@@ -180,7 +180,7 @@ function quizAns(ansC) {
     updateScore(score, noOfQuestions);
     if (questions.length > quizQuestLive + 1) {
         nextBtn.classList.remove('absent');
-
+        
     } else {
         quizBtn.innerText = 'TryAgain!';
         quizBtn.classList.remove('absent');
@@ -219,8 +219,6 @@ function removeStat(element) {
     element.classList.remove('wrong');
 }
 // add score 
-// const scoreDiv = document.getElementById('valid');
-// const total = document.getElementById('totalQuestions');
 
 function updateScore(score, noOfQuestions) {
 
