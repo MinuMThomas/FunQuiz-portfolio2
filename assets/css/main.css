@@ -11,12 +11,12 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: rgb(226, 191, 203);
     background-image: url(/assets/images/quiz1.webp);
     background-size: cover;
+    background-color: rgb(226, 191, 203);
   }
  h2{
-    color: rgba(32, 115, 160, 0.99);
+    color: rgba(24, 85, 241, 0.939);
     font-family:'Crimson Text', serif;
     text-transform: capitalize;
 text-shadow: 2px 2px;
