@@ -145,6 +145,7 @@ No unfixed bugs
 - README.md of cookbook project
 - coding-boot-camp- professional-readme-guide
 - All images are free to use and taken from freepik.com
+- riddles and introduction taken from brightful me blog
 
 
 ## Acknowledgements
