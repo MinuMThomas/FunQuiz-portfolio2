@@ -22,7 +22,7 @@ function quizBegin() {
     quizQuestLive = 0;
     quizQuestList.classList.remove('absent');
     nextQuizQuest();
-    alert("!!!!!BEGIN THE QUIZ!!!!");
+    // alert("!!!!!BEGIN THE QUIZ!!!!");
 }
 // next question 
 function nextQuizQuest() {
