@@ -79,7 +79,7 @@ const questions = [{
     ]
 },
 {
-    question: "Which ywar is this?",
+    question: "Which year is this?",
     correct: "2022",
     answers: [
         "2021",
