@@ -54,7 +54,7 @@ __Funtional Reqirements__
 The skeleton wireframe was made to give a clean and easy to use experiance.
 Made with Balsamiq
 
-![Skeleton of the website!](/assets/images/funQuizWireframe.png)
+![Skeleton of the website!](/assets/images/funquizwireframe.png)
 
 
 **Structure**
@@ -86,12 +86,12 @@ Wireframe
 ## Features
 
 - **Home Page**
-![The Home Page](./assets/images/homePage.png "image of home page")
+![The Home Page](./assets/images/homepage.png "image of home page")
 
 - **page after click on start button**
-![Questions and answers](./assets/images/pageAfterStart.png "image of question and answers")
+![Questions and answers](./assets/images/pageafterstart.png "image of question and answers")
 - **page after clicking on answer option**
-![Riddle answer score](./assets/images/pageAfterChoseAns.png "image of right answer and score")
+![Riddle answer score](./assets/images/pageafterchoseans.png "image of right answer and score")
 ## Technologies Used
 
 Main Language Used
@@ -101,18 +101,18 @@ Main Language Used
 
 ## Validator Testing
 
-- W3C validation links
-- Home Page :  <a href=https://validator.w3.org/nu/?doc=https%3A%2F%2Fminumthomas.github.io%2FRiddles-portfolio2%2Findex.html>link</a>
+- W3C HTML validation link:
+ <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fminumthomas.github.io%2FRiddles-portfolio2%2Findex.html">link</a>
 
 
 -  W3C CSS validation link : 
-<a >link</a>
+<a href= "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fminumthomas.github.io%2FRiddles-portfolio2%2Fassets%2Fcss%2Fmain.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">link</a>
 
 - JS Hint.com used for Java Script code validation
-![java script validation](./assets/images/jsValidation.png)
+![java script validation](./assets/images/jsvalidation.png)
 
 - Light house
-![light house validation](  "image of light house validator")
+![light house validation](./assets/images/lighthouse-score.png "image of light house validator")
 
 ## Manual testing
 - Tested 
