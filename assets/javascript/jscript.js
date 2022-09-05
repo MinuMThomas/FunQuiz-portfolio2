@@ -13,7 +13,7 @@ const questions = [{
     correct: "Incorrectly",
     answers: [
         "parliament",
-        "Incorrectly",
+        "incorrectly",
         "promise",
         "thursday"
     ]
@@ -32,14 +32,14 @@ const questions = [{
     question: "What is always coming but never arrives?",
     correct: "Tomorrow",
     answers: [
-        "car",
-        "river",
+        "Car",
+        "River",
         "Tomorrow",
-        "bus"
+        "Bus"
     ]
 },
 {
-    question: "What can one catch that is not thrown??",
+    question: "What can one catch that is not thrown?",
     correct: "cold",
     answers: [
         "fish",
@@ -54,8 +54,8 @@ const questions = [{
     answers: [
         "A door",
         "A wall",
-        "muscles",
-        "magic",
+        "Muscles",
+        "Magic",
     ]
 },
 {
@@ -84,8 +84,9 @@ const questions = [{
     answers: [
         "2021",
         "2018",
-        "2078",
-        "2022"
+        "2022",
+        "2078"
+        
     ]
 },
 {
@@ -93,9 +94,10 @@ const questions = [{
     correct: "Me",
     answers: [
         "Ronaldo",
+        "Me",
         "You",
-        "Messy",
-        "Me"
+        "Messy"
+        
     ]
 },
 ];
@@ -183,7 +185,7 @@ function quizAns(ansC) {
     }
 
 }
-// added background color in css for right and wrong answers
+// added background color in css for right and wrong answers and increase score
 function checkAnsStatus(element, correct) {
     removeStat(element);
    
@@ -209,7 +211,6 @@ function markAnswers(element, correct) {
 function removeStat(element) {
 
     element.classList.remove('correct');
-
     element.classList.remove('wrong');
 }
 // add score 

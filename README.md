@@ -1,7 +1,7 @@
-# Fun Quiz
-fun quiz is an online quiz made with java script. 
+# Riddles
+'Riddles' is an online riddles with amswer options and is made with java script. 
 
-![Fun Quiz](link here)
+![Riddles](link here)
 
 
 
@@ -13,7 +13,7 @@ View live website here! <a href="">link</a>
 #### User Stories
 First time users
 - As a user of the site, I want to check how this page work
-- As a user of the site, I want to see what is this quiz about
+- As a user of the site, I want to see what kind of riddles
 
 
 #### Site owner
@@ -27,16 +27,20 @@ First time users
 - The home page will have quiz logo and start button 
 ##### start button
 - after cliking the start button the question and answers will show on the same page
+##### next button 
+- the next button will load next qustion
+##### score
+- score will update after answering each question
 
 
 
 
 **Development**
 
-This web page developed with quiz questions for fun. small quiz time will make the user relaxed from a stressful day
+This web page developed with riddle questions for fun. small riddle time will make the user relaxed from a stressful day
 
 ### Strategy
-It's simple fun quiz for time pass .
+It's simple riddles for time pass .
 
 
 ## Scope
@@ -47,7 +51,8 @@ Home page with start button and next page with queston and answer options.
 
 __Funtional Reqirements__
 
-buttons to start and move on next question.
+- buttons to start and move on next question.
+- update scores
 
 
 **Skeleton**

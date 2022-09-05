@@ -35,7 +35,7 @@ text-align: center;
   
   .options{
     display: grid;
-    gap: 20px;
+    gap: 5px;
     margin: 15px 25px 15px 25px;
   }
   
@@ -73,8 +73,12 @@ text-align: center;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-
   }
+div #score{
+text-transform: capitalize;
+text-align: end;
+}
+  
   .absent {
     display: none;
   
