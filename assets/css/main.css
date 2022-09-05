@@ -18,8 +18,8 @@
  h2{
     color: rgba(24, 85, 241, 0.939);
     font-family:'Crimson Text', serif;
-    text-transform: capitalize;
-text-shadow: 2px 2px;
+ 
+text-shadow: 1px 2px;
 text-align: center;
 padding: 5px;
 margin: 20px 0 10px 0  
@@ -35,7 +35,14 @@ margin: 20px 0 10px 0
     margin: 20px 0 20px 0;
     box-shadow: 0 0 14px 5px;
   }
-  
+  #intro{
+    color: rgba(12, 68, 24, 0.936);
+    text-align: left;
+   line-height: 25px;
+    font-family:'Crimson Text', serif;
+    font-size: 30px;
+  }
+
   .options{
     display: grid;
     gap: 5px;

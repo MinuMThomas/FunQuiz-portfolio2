@@ -6,15 +6,19 @@ const questsQuiz = document.getElementById('question');
 const listOfAnswer = document.getElementById('btn-ans');
 const scoreDiv = document.getElementById('valid');
 const total = document.getElementById('totalQuestions');
-
+const introduction = document.getElementById('intro');
 let quizQuestLive;
 let score = 0;
 let noOfQuestions = questions.length;
 
-quizBtn.addEventListener('click', quizBegin);
+quizBtn.addEventListener('click', function(){
+    introduction.style.display='none';
+    quizBegin();
+});
 nextBtn.addEventListener('click', function () {
     quizQuestLive++;
     nextQuizQuest();
+   
 });
 
 function quizBegin() {
@@ -22,7 +26,8 @@ function quizBegin() {
     quizQuestLive = 0;
     quizQuestList.classList.remove('absent');
     nextQuizQuest();
-    // alert("!!!!!BEGIN THE QUIZ!!!!");
+    // alert("!!!!!RIDDLES HERE!!!!");
+    resetScore();
 }
 // next question 
 function nextQuizQuest() {
@@ -73,14 +78,14 @@ function quizAns(ansC) {
     Array.from(listOfAnswer.children).forEach(listItems => {
         markAnswers(listItems, listItems.dataset.correct);
     });
-    updateScore(score, noOfQuestions);
+    // updateScore(score, noOfQuestions);
     if (questions.length > quizQuestLive + 1) {
         nextBtn.classList.remove('absent');
-        
+        updateScore(score, noOfQuestions);
     } else {
         quizBtn.innerText = 'TryAgain!';
         quizBtn.classList.remove('absent');
-        tryAgain();
+        // tryAgain();
         // resetScore();
         // quizBtn.addEventListener('click', resetScore());
     }
@@ -88,7 +93,7 @@ function quizAns(ansC) {
 }
 // added alert and  increase score
 function checkAnsStatus(element, correct) {
-    removeStat(element);
+    // removeStat(element);
     if (correct) {
         element.classList.add('correct');
         score++;
@@ -131,13 +136,13 @@ function resetScore() {
     total.innerHTML = noOfQuestions;
 }
 //restart riddle again
-function resetRiddle() {
-    quizBegin();
-    scoreContent.classList.remove('absent');
-}
+// function resetRiddle() {
+//     quizBegin();
+//     scoreContent.classList.remove('absent');
+// }
 
-function tryAgain() {
-    resetScore();
-    resetRiddle();
+// function tryAgain() {
+//     resetScore();
+//     resetRiddle();
 
-}
+// }
