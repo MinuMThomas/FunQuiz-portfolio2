@@ -91,3 +91,9 @@ color: rgba(24, 85, 241, 0.939);
   .ans.wrong {
     background-color: rgb(194, 54, 54);
   }
+   /*  media query for  screen 600px and down */ 
+@media screen and (max-width: 600px) {
+  h2{
+    margin: 4em 0 0 0;;
+  }
+}

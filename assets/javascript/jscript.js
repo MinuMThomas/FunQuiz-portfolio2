@@ -49,7 +49,7 @@ const questions = [{
         ]
     },
     {
-        question: " What can provide us with power and strength to walk through a wall??",
+        question: " What can provide us with power and strength to walk through a wall?",
         correct: "A door",
         answers: [
             "A door",
@@ -59,13 +59,13 @@ const questions = [{
         ]
     },
     {
-        question: "When you drop a white hat in the Black sea, what will it become??",
-        correct: "It becomes wet",
+        question: "What color is the wind??",
+        correct: "blew",
         answers: [
-            "It becomes light",
-            "It becomes wet",
-            "It becomes white",
-            "It becomes black",
+            "red",
+            "white",
+            "blew",
+            "blue",
         ]
     },
     {
@@ -96,7 +96,7 @@ const questions = [{
             "Ronaldo",
             "Me",
             "You",
-            "Messy"
+            "Messi"
 
         ]
     },
