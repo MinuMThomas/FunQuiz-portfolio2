@@ -102,7 +102,7 @@ Main Language Used
 ## Validator Testing
 
 - W3C validation links
-- Home Page :  <a href=>link</a>
+- Home Page :  <a href=https://validator.w3.org/nu/?doc=https%3A%2F%2Fminumthomas.github.io%2FRiddles-portfolio2%2Findex.html>link</a>
 
 
 -  W3C CSS validation link : 
