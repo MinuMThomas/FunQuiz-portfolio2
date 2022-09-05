@@ -57,7 +57,7 @@ function viewQuizQuest(question) {
 function defReset() {
     removeStat(document.body);
     nextBtn.classList.add('absent');
-
+//hide html answer option list
     while (listOfAnswer.firstChild) {
         listOfAnswer.removeChild(listOfAnswer.firstChild);
 
@@ -78,13 +78,14 @@ function quizAns(ansC) {
     Array.from(listOfAnswer.children).forEach(listItems => {
         markAnswers(listItems, listItems.dataset.correct);
     });
-    // updateScore(score, noOfQuestions);
+    updateScore(score, noOfQuestions);
     if (questions.length > quizQuestLive + 1) {
         nextBtn.classList.remove('absent');
-        updateScore(score, noOfQuestions);
+       
     } else {
         quizBtn.innerText = 'TryAgain!';
         quizBtn.classList.remove('absent');
+        updateScore(score, noOfQuestions);
         // tryAgain();
         // resetScore();
         // quizBtn.addEventListener('click', resetScore());
