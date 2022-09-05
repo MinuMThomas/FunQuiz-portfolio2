@@ -11,7 +11,7 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/images/quiz1.webp);
+    background-image: url(../images/quiz1.webp);
     background-size: cover;
     background-color: rgb(226, 191, 203);
   }
@@ -21,7 +21,10 @@
     text-transform: capitalize;
 text-shadow: 2px 2px;
 text-align: center;
-  }
+padding: 5px;
+margin: 20px 0 10px 0  
+}
+
 
   .container {
     width: 800px;
