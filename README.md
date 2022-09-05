@@ -1,13 +1,10 @@
 # Riddles
 'Riddles' is an online riddles with amswer options and is made with java script. 
 
-![Riddles](link here)
-
-
 
 View live website here! <a href="https://minumthomas.github.io/Riddles-portfolio2/">link</a>
 
-![Responsive image of the website!]( ./assets/images/responsive%20image.png "responsive image of the site")
+![Responsive image of the website!](./assets/images/responsive%20image.png "responsive image of the site")
 ## UX
 
 #### User Stories
@@ -69,7 +66,7 @@ Structure made with Balsamiq
 Wireframe 
 ![Wireframe of the Home page!](  "wireframe of home page")
 
-![Second page](/assets/image/Students%20Corner.png "wireframe of quiz question and answer page")
+![Second page]( "wireframe of quiz question and answer page")
 
 
 
@@ -91,11 +88,12 @@ Wireframe
 ## Features
 
 - **Home Page**
-![]( "image of home page")
+![The Home Page](./assets/images/homePage.png "image of home page")
 
-- **after click on start button**
-![Quiz Questions and answers](./assets/images/funQuizWireframe.png "image of question and answers")
-
+- **page after click on start button**
+![Questions and answers](./assets/images/pageAfterStart.png "image of question and answers")
+- **page after clicking on answer option**
+![Riddle answer score](./assets/images/pageAfterChoseAns.png "image of right answer and score")
 ## Technologies Used
 
 Main Language Used
