@@ -17,7 +17,6 @@ First time users
 
 - As an owner of the site, I want to provide some refreshment time for user 
 
-
  
 #### Site structure
 
@@ -28,7 +27,6 @@ First time users
 - the next button will load next qustion
 ##### score
 - score will update after answering each question
-
 
 
 
