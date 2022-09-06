@@ -18,11 +18,10 @@
  h2{
     color: rgba(24, 85, 241, 0.939);
     font-family:'Crimson Text', serif;
- 
-text-shadow: 1px 2px;
-text-align: center;
-padding: 5px;
-margin: 20px 0 10px 0  
+    text-shadow: 1px 2px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px 0 10px 0  
 }
 
 
@@ -88,11 +87,9 @@ color: rgba(24, 85, 241, 0.939);
   
   .absent {
     display: none;
-  
   }
   .ans.correct {
     background-color: rgb(50, 129, 50);
-  
   }
   
   .ans.wrong {

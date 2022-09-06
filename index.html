@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Online Riddles">
-    <meta name="keywords" content="riddle, fun, timepass, riddles for fun, game">
-    <meta name="author" content="MinuMT">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <title>Riddles</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Online Riddles">
+  <meta name="keywords" content="riddle, fun, timepass, riddles for fun, game">
+  <meta name="author" content="MinuMT">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Riddles</title>
 </head>
+
 <body>
-    <!-- box for quiz -->
-  <div class="container" >
+  <!-- box for quiz -->
+  <div class="container">
     <div id="intro" class="hide">
-    <p><h2>Riddles</h2></p>
-    <p>These riddles are humorous, and funny enough to get a laugh from the answer</p>
-    <p>You can probably assume the answer is a play on words</p>
-    <p>Great fun to use as an icebreaker or refresh yourself!</p>
-    <p>Press start to find the riddles</p>
-  </div>
+      <p>
+        <h2>Riddles</h2>
+      </p>
+      <p>These riddles are humorous, and funny enough to get a laugh from the answer</p>
+      <p>You can probably assume the answer is a play on words</p>
+      <p>Great fun to use as an icebreaker or refresh yourself!</p>
+      <p>Press start to find the riddles</p>
+    </div>
     <div id="quiz" class="absent">
-          <!-- question area -->
+      <!-- question area -->
       <div id="question">Question</div>
       <div id="btn-ans" class="options">
         <ul>
@@ -36,14 +40,15 @@
     <!-- button for begin the game and next question -->
     <div class="buttons">
       <button id="btn-starts" class="btn-start ans">start</button>
-      <button id="btn-submits" class="btn-submit ans absent">Next</button>  
-     
+      <button id="btn-submits" class="btn-submit ans absent">Next</button>
+<!-- ------------score area ---------- -->
     </div>
     <div id="score" class="scores absent">
       <p>score:<span id="valid"></span>/<span id="totalQuestions"></span></p>
     </div>
   </div>
   <script src="assets/javascript/main.js"></script>
-<script src="assets/javascript/jscript.js"></script>
+  <script src="assets/javascript/jscript.js"></script>
 </body>
+
 </html>
