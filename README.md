@@ -1,8 +1,8 @@
 # Riddles
-'Riddles' is an online riddle questions with amswer options and is made with java script. 
+'Riddles' is an online riddle question with answer options and is made with javascript. 
 
 
-View live website here! <a href="https://minumthomas.github.io/Riddles-portfolio2/">link</a>
+View the live website here! <a href="https://minumthomas.github.io/Riddles-portfolio2/">link</a>
 
 ![Responsive image of the website!](./assets/images/responsiveimage.png "responsive image of the site")
 ## UX
@@ -109,17 +109,22 @@ Main Language Used
 -  W3C CSS validation link : 
 <a href= "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fminumthomas.github.io%2FRiddles-portfolio2%2Fassets%2Fcss%2Fmain.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">link</a>
 
-- JS Hint.com used for Java Script code validation
-![java script validation](./assets/images/jsvalidation.png)
 
-- Light house
-![light house validation](./assets/images/lighthouse-score.png "image of light house validator")
+
+- JS Hint.com used for Java Script code validation
+![java script validation](./assets/images/jshintpic.png)
+
+
+
+- Lighthouse
+![lighthouse validation](./assets/images/lighthouse-score.png "image of lighthouse validator")
+
 
 ## Manual testing
-- Tested 
-- Tested on 
-- Tested on 
-
+- Tested the start button and next button and it works
+- Tested answer options and  functionalities 
+- Tested on Chrome, Safari and Firefox browsers
+- Tested on Desktop, Laptop, iPad and mobile phones
 
 ## Deployment
 - The project was created in Github using the Code Institute’s full template
@@ -141,8 +146,8 @@ No unfixed bugs
 ## Credits and Reference
 
 - W3School 
-- stackoverflow
--  
+- MDN Web Docs
+- stackoverflow 
 - README.md of cookbook project
 - coding-boot-camp- professional-readme-guide
 - All images are free to use and taken from freepik.com
@@ -151,4 +156,5 @@ No unfixed bugs
 
 ## Acknowledgements
 
-- 
+- Thanks to my mentor.
+- Thanks to Cohort Facilitators.
