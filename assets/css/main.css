@@ -90,10 +90,12 @@ color: rgba(24, 85, 241, 0.939);
   }
   .ans.correct {
     background-color: rgb(50, 129, 50);
+    pointer-events: none;
   }
   
   .ans.wrong {
     background-color: rgb(194, 54, 54);
+    pointer-events: none;
   }
    /*  media query for  screen 600px and down */ 
 @media screen and (max-width: 600px) {
