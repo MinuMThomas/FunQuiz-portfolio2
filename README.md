@@ -1,5 +1,5 @@
 # Riddles
-'Riddles' is an online riddles with amswer options and is made with java script. 
+'Riddles' is an online riddle questions with amswer options and is made with java script. 
 
 
 View live website here! <a href="https://minumthomas.github.io/Riddles-portfolio2/">link</a>
@@ -61,7 +61,8 @@ Made with Balsamiq
 The information and features was made into a easy to follow and read structure, with clear directions.
 Structure made with Balsamiq
 
-Wireframe 
+- Wireframe 
+
 ![Wireframe of the Home page!](./assets/images/first-page.png "wireframe of home page")
 
 ![Second page](./assets/images/page2wireframe.png "wireframe of riddle question and answer page")
@@ -86,7 +87,7 @@ Wireframe
 ## Features
 
 - **Home Page**
-![The Home Page](./assets/images/homepage.png "image of home page")
+![The Home Page](./assets/images/homepage1.png "image of home page")
 
 - **page after click on start button**
 ![Questions and answers](./assets/images/pageafterstart.png "image of question and answers")
