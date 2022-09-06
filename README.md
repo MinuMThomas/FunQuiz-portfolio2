@@ -4,7 +4,7 @@
 
 View live website here! <a href="https://minumthomas.github.io/Riddles-portfolio2/">link</a>
 
-![Responsive image of the website!](./assets/images/responsive%20image.png "responsive image of the site")
+![Responsive image of the website!](./assets/images/responsiveimage.png "responsive image of the site")
 ## UX
 
 #### User Stories
