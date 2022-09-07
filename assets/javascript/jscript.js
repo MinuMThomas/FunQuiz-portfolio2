@@ -71,7 +71,7 @@ function quizAns(event) {
         nextBtn.classList.remove('absent');
 
     } else {
-        quizBtn.innerText = 'TryAgain!';
+        quizBtn.innerText = 'Restart the Riddles!';
         quizBtn.classList.remove('absent');
         updateScore(score, noOfQuestions);
     }
