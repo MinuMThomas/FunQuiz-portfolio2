@@ -36,7 +36,7 @@ function nextQuizQuest() {
 
 function viewQuizQuest(question) {
     questsQuiz.innerText = question.question;
-    //use forEach call back fn to each array element 
+    //use forEach call back fn to each array element, refer to html list items
     question.answers.forEach(answer => {
         const listItems = document.createElement('li');
         listItems.innerText = answer;
