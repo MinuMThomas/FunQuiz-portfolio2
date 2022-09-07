@@ -61,7 +61,7 @@ Made with Balsamiq
 The information and features was made into a easy to follow and read structure, with clear directions.
 Structure made with Balsamiq
 
-- Wireframe 
+- __Wireframe__
 
 ![Wireframe of the Home page!](./assets/images/first-page.png "wireframe of home page")
 
@@ -131,6 +131,9 @@ Main Language Used
 - Tested on Chrome, Safari and Firefox browsers
 - Tested on Desktop, Laptop, iPad and mobile phones
 
+- screen shot of the page from iPhone13
+![screen shot of the page from iPhone13](./assets/images/screenshotiphone.PNG)
+
 ## Deployment
 - The project was created in Github using the Code Institute’s full template
 - Github was used for code repository 
@@ -156,8 +159,8 @@ No unfixed bugs
 - README.md of cookbook project
 - coding-boot-camp- professional-readme-guide
 - All images are free to use and taken from freepik.com
-- riddles and introduction taken from brightful me blog
-- youtube code refernce from web Dev simplified and keep coding 
+- riddles and introduction taken from brightful me blog <a href= "https://www.brightful.me/blog/trick-questions/">link</a>
+- youtube code refernce from web Dev simplified <a href= "https://www.youtube.com/watch?v=riDzcEQbX6k&t=1311s">link</a> and keep coding <a href= "https://www.youtube.com/watch?v=MxrGPP4F8Sc&t=2714s">link</a>
 
 
 ## Acknowledgements
