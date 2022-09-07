@@ -93,6 +93,11 @@ Structure made with Balsamiq
 ![Questions and answers](./assets/images/pageafterstart.png "image of question and answers")
 - **page after clicking on answer option**
 ![Riddle answer score](./assets/images/pageafterchoseans.png "image of right answer and score")
+
+- **restart the riddle button**
+![Reastart riddle button will appear after answering the final question](./assets/images/restartbutton.png "image of restart button on the final page")
+
+
 ## Technologies Used
 
 Main Language Used
