@@ -33,7 +33,6 @@ function nextQuizQuest() {
     viewQuizQuest(questions[quizQuestLive]);
 }
 //question function
-
 function viewQuizQuest(question) {
     questsQuiz.innerText = question.question;
     //use forEach call back fn to each array element, refer to html list items
@@ -58,14 +57,11 @@ function defReset() {
     }
 }
 
-function quizAns(ansC) {
-
-    const ansBtn = ansC.target;
+function quizAns(event) {
+    const ansBtn = event.target;
     const correct = ansBtn.dataset.correct;
-
     //answer status and move on to next question or restart
     checkAnsStatus(document.body, correct);
-
     //array to use foreach loop - include all questions and restart after last question
     Array.from(listOfAnswer.children).forEach(listItems => {
         markAnswers(listItems, listItems.dataset.correct);

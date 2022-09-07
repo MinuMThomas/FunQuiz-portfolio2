@@ -152,6 +152,7 @@ No unfixed bugs
 - coding-boot-camp- professional-readme-guide
 - All images are free to use and taken from freepik.com
 - riddles and introduction taken from brightful me blog
+- youtube code refernce from web Dev simplified and keep coding 
 
 
 ## Acknowledgements
